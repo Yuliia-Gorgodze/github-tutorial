@@ -4,15 +4,18 @@
 /* цвет при наведении #2196F3; */
 /* цвет текста на банере #FFFFFF; */
 /* цвет иконок #AFB1B8; */
+/* цвет кнопок в портфолио #F5F4FA;*/
 
 :root {
   --primary-text-color: #757575;
   --title-color: #212121;
   --hover-color: #2196f3;
+  --background-button: #f5f4fa;
+  --background-color: #ffffff;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: var(--background-color);
   color: var(--primary-text-color);
 }
 
@@ -52,7 +55,21 @@ ul {
 
 .section .element {
   color: var(--title-color);
+  background-color: var(--title-color);
 }
 .title {
-  color: #ffffff;
+  color: var(--background-color);
+}
+
+/*портфолио*/
+
+.background-button {
+  background-color: var(--background-button);
+  color: var(--title-color);
+}
+
+.background-button:hover,
+.background-button:focus {
+  background-color: var(--hover-color);
+  color: var(--background-color);
 }
